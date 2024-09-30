@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import org.springframework.http.ResponseEntity;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
@@ -102,5 +104,5 @@ public class User implements Serializable {
 			return false;
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
-	}	
+	}
 }
